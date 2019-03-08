@@ -105,6 +105,7 @@
             this.code.Name = "code";
             this.code.Size = new System.Drawing.Size(139, 22);
             this.code.TabIndex = 6;
+            this.code.TextChanged += new System.EventHandler(this.code_TextChanged);
             // 
             // stopcode
             // 
@@ -150,6 +151,7 @@
             this.GoogleMap.TabIndex = 12;
             this.GoogleMap.Text = "Google地圖定位";
             this.GoogleMap.UseVisualStyleBackColor = true;
+            this.GoogleMap.Click += new System.EventHandler(this.GoogleMap_Click);
             // 
             // down
             // 
@@ -159,6 +161,7 @@
             this.down.TabIndex = 13;
             this.down.Text = "下一筆";
             this.down.UseVisualStyleBackColor = true;
+            this.down.Click += new System.EventHandler(this.down_Click);
             // 
             // Top
             // 

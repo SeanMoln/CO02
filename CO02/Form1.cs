@@ -88,15 +88,14 @@ namespace CO02
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var dast = dataGridView1.SelectedCells;
-            if(dast != null )
-            {
-              
-            }
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = dataGridView1.Rows[index];
+            Form_load(selectedRow);
         }
-        private void  Form_load (string NN)
+        private void  Form_load (DataGridViewRow NN)
         {
-            var ff = new Form2();
+            var ff = new Form2(NN);
+            ff.Show();
 
 
         }
