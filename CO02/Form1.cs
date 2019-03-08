@@ -80,5 +80,25 @@ namespace CO02
             dataGridView1.DataSource = bindingSource1;
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var dast = dataGridView1.SelectedCells;
+            if(dast != null )
+            {
+              
+            }
+        }
+        private void  Form_load (string NN)
+        {
+            var ff = new Form2();
+
+
+        }
     }
 }
